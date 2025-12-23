@@ -1,0 +1,16 @@
+antigravity-bin
+anydesk-bin
+hardinfo2
+icu69-bin
+kcat-cli
+openvpn3-git
+pipes.sh
+portprotonqt
+postman-bin
+r2modman-bin
+stacer-bin
+update-grub
+v4l2loopback-dkms-git
+visual-studio-code-bin
+windscribe-v2-bin
+zoom
