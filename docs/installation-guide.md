@@ -19,10 +19,26 @@
 # Установка всех пакетов
 sudo ./scripts/install.sh all
 
+# Установка всех пакетов с AUR
+sudo ./scripts/install.sh all_with_aur
+
 # Установка пакетов определенной категории
 sudo ./scripts/install.sh core
 sudo ./scripts/install.sh desktop
+sudo ./scripts/install.sh niri
+sudo ./scripts/install.sh cosmic
+sudo ./scripts/install.sh development
+sudo ./scripts/install.sh fonts-themes
+sudo ./scripts/install.sh hardware
+sudo ./scripts/install.sh virtualization
 sudo ./scripts/install.sh aur
+
+# Дополнительные опции:
+# --missing-only: Установить только отсутствующие пакеты
+sudo ./scripts/install.sh core --missing-only
+
+# --log-file: Записывать лог в указанный файл
+sudo ./scripts/install.sh all --log-file /path/to/logfile.log
 ```
 
 Для установки AUR пакетов запускайте скрипт без sudo:

@@ -11,7 +11,6 @@ os-prober
 smartmontools
 timeshift
 udiskie
-update-grub
 xdg-user-dirs
 xdg-utils
 yay
