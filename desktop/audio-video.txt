@@ -3,6 +3,7 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 wireplumber
+pavucontrol
 gst-libav
 gst-plugin-pipewire
 ffmpeg

@@ -43,6 +43,35 @@ setup_security() {
     # Здесь можно добавить настройки безопасности
 }
 
+# Функция для настройки PipeWire для коротких звуков уведомлений
+setup_pipewire_for_short_sounds() {
+    # Проверяем, установлены ли пакеты PipeWire
+    if command -v pipewire &>/dev/null && command -v wireplumber &>/dev/null; then
+        log_info "Настройка PipeWire для корректной работы коротких звуков уведомлений..."
+        
+        # Подключаем модуль настройки PipeWire, если он доступен
+        if [[ -f "$SCRIPT_DIR/modules/pipewire-config.sh" ]]; then
+            source "$SCRIPT_DIR/modules/pipewire-config.sh"
+            # Подключаем модуль очистки кэша WirePlumber
+            if [[ -f "$SCRIPT_DIR/modules/wireplumber-cache-cleanup.sh" ]]; then
+                source "$SCRIPT_DIR/modules/wireplumber-cache-cleanup.sh"
+                
+                # Выполняем очистку кэша перед настройкой
+                cleanup_wireplumber_and_rules
+                # Выполняем настройку PipeWire
+                setup_pipewire_for_short_sounds
+            else
+                log_info "Модуль очистки кэша WirePlumber не найден, выполняем только настройку PipeWire"
+                setup_pipewire_for_short_sounds
+            fi
+        else
+            log_info "Модуль настройки PipeWire не найден, пропускаем настройку"
+        fi
+    else
+        log_info "PipeWire не установлен, пропускаем настройку"
+    fi
+}
+
 # Основная функция постустановочных действий
 post_installation() {
     local username="$1"
@@ -54,6 +83,7 @@ post_installation() {
     setup_sudo
     setup_services
     setup_security
+    setup_pipewire_for_short_sounds
     
     log_info "Постустановочные действия завершены"
 }
