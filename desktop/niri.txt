@@ -3,3 +3,4 @@ nwg-look
 matugen
 wl-clipboard
 fuzzel
+wlsunset

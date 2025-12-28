@@ -1,6 +1,10 @@
 ttf-ubuntu-nerd
 ttf-ubuntu-mono-nerd
+ttf-roboto
+ttf-material-symbols-variable
+inter-font
 papirus-icon-theme
 qt5ct
 qt6ct
 kvantum
+noto-fonts-emoji
