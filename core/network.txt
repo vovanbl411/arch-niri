@@ -1,8 +1,10 @@
 iwd
-iw
-wireless_tools
 openssh
 dnsmasq
-wireguard-tools
-nftables-nft
+networkmanager
+nftables
 firewalld
+dhcpcd
+avahi
+wireguard-tools
+openresolv

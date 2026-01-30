@@ -3,7 +3,6 @@ btop
 chafa
 fd
 fzf
-ghostty
 git
 go
 htop
@@ -24,3 +23,17 @@ vim
 yazi
 zoxide
 rclone
+clang
+llvm
+llvm-libs
+lld
+pkgconf
+tree-sitter
+tree-sitter-c
+tree-sitter-lua
+tree-sitter-markdown
+tree-sitter-query
+tree-sitter-vim
+tree-sitter-vimdoc
+zed
+zellij

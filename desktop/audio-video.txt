@@ -1,7 +1,9 @@
 pipewire
 pipewire-alsa
+pipewire-audio
 pipewire-jack
 pipewire-pulse
+pipewire-v4l2
 wireplumber
 pavucontrol
 gst-libav
@@ -14,3 +16,5 @@ lib32-vulkan-mesa-layers
 lib32-pipewire-v4l2
 lib32-libva-intel-driver
 sof-firmware
+obs-studio
+gpu-screen-recorder

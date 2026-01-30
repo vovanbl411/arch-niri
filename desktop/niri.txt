@@ -4,3 +4,6 @@ matugen
 wl-clipboard
 fuzzel
 wlsunset
+xwayland-satellite
+noctalia-shell
+quickshell

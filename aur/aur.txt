@@ -1,9 +1,9 @@
-antigravity-bin
 anydesk-bin
-hardinfo2
+avro-c
+bridge-utils
+gdbuspp
 icu69-bin
 kcat-cli
-openvpn3-git
 pipes.sh
 portprotonqt
 postman-bin
@@ -12,7 +12,6 @@ stacer-bin
 update-grub
 v4l2loopback-dkms-git
 visual-studio-code-bin
-windscribe-v2-bin
+yay-debug
+yp-tools
 zoom
-onlyoffice-bin
-update-grub

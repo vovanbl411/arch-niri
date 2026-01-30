@@ -1,10 +1,11 @@
 cliphist
-fuzzel
 mako
 mate-polkit
-qt5-wayland
-qt6ct
-wl-clipboard
-wlsunset
 xdg-desktop-portal-gnome
 xdg-desktop-portal-gtk
+brightnessctl
+fastfetch
+fish
+kitty
+kitty-shell-integration
+kitty-terminfo

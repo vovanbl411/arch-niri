@@ -4,8 +4,9 @@ libvirt
 virt-manager
 virt-viewer
 virt-install
+virtiofsd
 swtpm
 edk2-ovmf
-dnsmasq
 iptables-nft
-bridge-utils
+libvirt-glib
+libvirt-python
